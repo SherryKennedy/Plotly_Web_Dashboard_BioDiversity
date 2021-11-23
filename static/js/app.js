@@ -1,16 +1,11 @@
 
-//////////////////
-// reference this site: https://freesoft.dev/program/163036169
-// note: d3 needs to run with a local server. 
-// https://github.com/processing/p5.js/wiki/Local-server
-
 // global vars:
-const filePath = "../data/samples.json";
 let fileSamples = [];
 let fileMetadata = [];
 
 
 function init() {
+    const filePath = "../../data/samples.json";
     console.log("in init section.");
     let firstSubjectID = "";
     let fileNames = [];
