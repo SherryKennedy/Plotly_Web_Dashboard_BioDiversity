@@ -60,7 +60,7 @@ function visPlots(subjectID) {
     // Filter the sample data for a particular subject id
     let resultsarray= fileSamples.filter(sampleobject => sampleobject.id == subjectID);
     let result= resultsarray[0];
-    //console.log(result);
+
     let ids = result.otu_ids;
     console.log(ids);
     let labels = result.otu_labels;
@@ -82,10 +82,7 @@ function visPlots(subjectID) {
   
     let barLayout = {
       title: `<b>Top 10 Bacteria Cultures Found</b><br>(Subject ID: ${subjectID})`,
-      //color_discrete_sequence ='#567ab1'
-      //color_discrete_sequence =['#567ab1']*len(df),
-      //color: '#567ab1'
-      //margin: { t: 30, l: 150 }
+      
     };
   
     Plotly.newPlot("bar", bar_data, barLayout);
@@ -96,11 +93,7 @@ function visPlots(subjectID) {
       xaxis: { title: "OTU ID" },
       hovermode: "closest",
       showlegend: false,
-      // legend: {
-      //     x: 1,
-      //     y: 0.5
-      // },
-      //margin: { t: 0 },
+      
       };
   
     let DataBubble = [
@@ -124,7 +117,6 @@ function getMetaData(subjectID){
   //gets the meta data according the subjectID selected
   console.log("in getMetaData:  ");
   let resultarray = fileMetadata.filter((dataobject) => dataobject.id == subjectID);
-  //console.log(`RESULT 1: ${resultarray[0]}`)
   return resultarray[0];
 };
 
@@ -138,7 +130,7 @@ function demoInfo(subjectID){
     let infoPanel = d3.select("#sample-metadata").html("");
 
     result = getMetaData(subjectID);
-    //console.log(`result = ${result}`);
+ 
     // Use `Object.entries` to add each key and value pair to the panel
     Object.entries(result).forEach(([key, value]) => {
         infoPanel.append("h6").text(`${key}: ${value}`);
