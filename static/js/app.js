@@ -5,8 +5,9 @@ let fileMetadata = [];
 
 
 function init() {
-    const filePath = "../../data/samples.json";
+    const filePath = "data/samples.json";
     console.log("in init section.");
+    console.log(filePath);
     let firstSubjectID = "";
     let fileNames = [];
     // Initialize the dropdown with values
