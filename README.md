@@ -28,6 +28,7 @@ Used the following ***directory***  and  file setup:
 ## NOTE:
 * When running locally on your computer, d3 needs a local server
 [Local Server Setup](https://github.com/processing/p5.js/wiki/Local-server )
+* When on github d3 looks for a file from working directory, from your root.
 
 
 ## Step 1: Plotly
