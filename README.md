@@ -1,13 +1,13 @@
 # Plotly_Web_Dashboard_BioDiversity
 Built an interactive dashboard to explore the Belly Button Biodiversity
 
+View the interactive website here: [Belly Button Biodiversity](https://sherrykennedy.github.io/Plotly_Web_Dashboard_BioDiversity/)
 ![Bacteria by filterforge.com](static/images/bacteria.jpg)
 
-Built an interactive dashboard to explore the [Belly Button Biodiversity dataset](http://robdunnlab.com/projects/belly-button-biodiversity/), which catalogs the microbes that colonize human navels.
+The dashboard was built to explore the [Belly Button Biodiversity dataset](http://robdunnlab.com/projects/belly-button-biodiversity/), which catalogs the microbes that colonize human navels.
 
 The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare.
 
-The final project can be viewed here: [Belly Button Biodiversity](https://sherrykennedy.github.io/Plotly_Web_Dashboard_BioDiversity/)
 
 ## Setup
 Used the following ***directory***  and  file setup:
